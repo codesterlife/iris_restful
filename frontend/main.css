@@ -1,0 +1,23 @@
+html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  label{
+    text-shadow: 1px 1px #222222;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+  
+  .card-deck .card {
+    min-width: 220px;
+  }
+
+  h4 {
+    text-shadow: 2px 2px #222222;
+  }

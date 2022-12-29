@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Iris Flower Prediction Web App</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        body {
+            background-image: url('./assets/images/gooey.jpg');
+            background-size: cover;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+</head>
+<body>
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark text-white border shadow-sm m-5">
+
+    <h4 class="my-0 mr-md-auto font-weight-normal text-shadow">Iris Flower Classification Web App</h4>
+
+    <div class="container p-3 my-3 bg-secondary text-white">
+
+    <div id="output" class="alert alert-success" style="display: none;"></div>
+
+    <form action="/" id="irisForm" class="form-group">
+
+        <label for="sepal_length">Sepal Length:</label>
+        <input class="form-control" type="text" name="sepal_length" id="sepal_length">
+
+        <label for="sepal_width">Sepal Width:</label>
+        <input class="form-control" type="text" name="sepal_width" id="sepal_width">
+
+        <label for="petal_length">Petal Length:</label>
+        <input class="form-control" type="text" name="petal_length" id="petal_length">
+
+        <label for="petal_width">Petal Width:</label>
+        <input class="form-control" type="text" name="petal_width" id="petal_width">
+
+        <button class="btn btn-dark mt-3" type="submit" onclick="displayPrediction()">Predict</button>
+
+    </form>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+    </div>
+</body>
+</html>
